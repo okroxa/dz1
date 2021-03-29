@@ -75,9 +75,7 @@ public class TableFragment extends Fragment implements OnItemClicked{
     @Override
     public void onSaveInstanceState(@Nullable Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
-        if (savedInstanceState == null) {
             savedInstanceState = new Bundle();
-        }
         savedInstanceState.putIntegerArrayList(null, (ArrayList<Integer>)data);
     }
 
